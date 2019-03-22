@@ -1,0 +1,249 @@
+/* --------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* --------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* --------------------------------------- */
+
+.row{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+/* -------- HEDINGS -------- */
+
+h1,
+h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1{
+    font-size: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    word-spacing: 4px;
+}
+
+@media only screen and (max-width: 2560px) {
+    h1{
+        font-size: 30px;
+        padding-left: 10px; 
+    }
+    
+    .btn{
+        margin-bottom: 10px;
+    }
+    
+    .times-text-box{
+        margin-left: 60px;
+    }
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-size: 120%;
+    font-weight: 200;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e67e22;
+}
+
+h4{
+    color: #fff;
+}
+
+h5{
+    font-size: 80%;
+    font-weight: 100;
+    word-spacing: 2px;
+    float: left;
+    margin-bottom: 2px;
+    margin-left: 15px;
+}
+
+h6{
+    font-size: 80%;
+    font-weight: 100;
+    word-spacing: 2px;
+    float: right;
+    margin-bottom: 2px;
+}
+
+.beschrijving{
+    font-size: 50%;
+    font-weight: 50;
+    word-spacing: 2px;
+    text-align: left;
+    margin-left: 15px
+    line-height: 1.5em;
+}
+
+h5,
+h6{
+    display: block;
+}
+/* -------- BUTTONS -------- */
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s ;
+    margin-left: 20px;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid rgb(231, 126, 35);
+    color: #fff;
+}
+
+.btn-fullfb:link,
+.btn-fullfb:visited{
+    background-color: #3B5998;
+    border: 1px solid #3B5998;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #cf6d17;
+    
+}
+
+.btn-full:hover,
+.btn-full:active{
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #cf6d17;
+}
+
+
+/* --------------------------------------- */
+/* HEADER */
+/* --------------------------------------- */
+
+header{
+    background-image: url(img/Pizza.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo{
+    height: 200px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.times-text-box{
+    color: #fff;
+}
+
+.info{
+    margin-left: 20px;
+}
+
+.menu-item {
+    margin: 12px 20px;
+    font-size: 18px;
+    
+}
+
+.menu-item-name{
+    /*border-bottom: 2px dotted rgb(213, 213, 213);   */
+    font-size: 90%;
+    font-weight: 100;
+    word-spacing: 2px;
+    width: 70%;
+}
+
+.menu-item-sauce{
+    /*border-bottom: 2px dotted rgb(213, 213, 213);   */
+    text-align: center;
+    font-size: 90%;
+    font-weight: 100;
+    word-spacing: 2px;
+    width: 100%;
+}
+
+.menu-item-description {
+    font-style: italic;
+    font-size: .9em;
+    line-height: 1.5em;    
+    font-size: 60%;
+    font-weight: 50;
+    word-spacing: 2px;
+    text-align: left;
+    
+    padding-left: 15px;
+    border-top: 2px dotted rgb(213, 213, 213);
+}
+
+.menu-item-price{
+    
+    float: right;
+    margin-top: -20px;
+    font-size: 90%;
+    font-weight: 100;
+    word-spacing: 2px;
+    width: 30%;
+    text-align: right;
+}
