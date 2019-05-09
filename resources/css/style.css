@@ -15,6 +15,7 @@ html{
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    min-height: 100%;
 }
 
 /* --------------------------------------- */
@@ -24,6 +25,7 @@ html{
 .row{
     max-width: 100%;
     margin: 0 auto;
+    padding-left: 5%;
 }
 
 section{
@@ -58,7 +60,7 @@ h1{
     }
     
     .times-text-box{
-        margin-left: 60px;
+        margin-left: 10px;
     }
 }
 
@@ -93,6 +95,7 @@ h4{
 }
 
 h5{
+    color: #fff;
     font-size: 80%;
     font-weight: 100;
     word-spacing: 2px;
@@ -183,11 +186,11 @@ header{
     background-image: url(img/Pizza.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .logo{
-    height: 200px;
+    height: 300px;
     width: auto;
     float: left;
     margin-top: 20px;
